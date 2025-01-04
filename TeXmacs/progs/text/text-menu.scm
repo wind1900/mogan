@@ -833,7 +833,7 @@
   (in? (tree-label t) '(chapter part)))
 
 (define (is-section-top-level t)
-  (in? (tree-label t) '(section)))
+  (in? (tree-label t) '(section section*)))
 
 (define (get-verbatim-section-title s indent?)
   (if (is-current-tree s)

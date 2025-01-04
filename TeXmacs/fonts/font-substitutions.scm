@@ -47,3 +47,6 @@
 ((Constantia sansserif) (Corbel))
 ((Constantia typewriter) (Consolas))
 ((Corbel typewriter) (Consolas))
+
+((Times\ New\ Roman cjk) (SimSun))
+((SimSun italic) (SimKai))
