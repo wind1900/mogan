@@ -1,3 +1,5 @@
+import mathjax3 from 'markdown-it-mathjax3'
+
 export default {
     title: 'Mogan STEM Suite',
     outDir: "../website",
@@ -46,19 +48,19 @@ export default {
     ignoreDeadLinks: false,
     head: [
         ['link', {rel: 'icon', href: '/favicon.png'}],
-    ]
+    ],
+    markdown: {
+        config(md) {
+            md.use(mathjax3);
+        },
+    }
 }
 
 function nav() {
     return [
         {
-            text: 'SICP Open Course🔥',
-            link: '/zh/guide/SICP',
-            activeMatch: '/sicp/'
-        },
-        {
-            text: 'Summer of Code🔥',
-            link: '/guide/SummerOfCode',
+            text: 'Tutorial on Mogan🔥',
+            link: '/zh/guide/Tutorial',
             activeMatch: '/ospp/'
         },
         {
@@ -80,13 +82,8 @@ function nav() {
 function navZh() {
     return [
         {
-            text: 'SICP公开课🔥',
-            link: '/zh/guide/SICP',
-            activeMatch: '/sicp/'
-        },
-        {
-            text: '开源之夏🔥',
-            link: '/guide/SummerOfCode',
+            text: '零基础墨干🔥',
+            link: '/zh/guide/Tutorial',
             activeMatch: '/ospp/'
         },
         {
