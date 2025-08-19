@@ -24,7 +24,7 @@ struct glyph;
 struct font_metric;
 struct font_glyphs;
 
-#define FONT_ATTEMPTS 20
+#define FONT_ATTEMPTS 320
 
 #define FONT_TYPE_TEX 0
 #define FONT_TYPE_UNICODE 1

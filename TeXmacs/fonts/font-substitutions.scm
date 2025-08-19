@@ -34,7 +34,7 @@
 
 ((concrete cjk) (Noto\ CJK\ SC))
 ((roman cjk) (Noto\ CJK\ SC))
-((Stix cjk) (Noto\ CJK\ SC))
+((Stix) (HarmonyOS))
 
 ((Bodoni\ 72 smallcaps) (Bodoni\ 72\ Smallcaps))
 ((Bodoni\ 72\ Oldstyle smallcaps) (Bodoni\ 72\ Smallcaps))
@@ -49,4 +49,6 @@
 ((Corbel typewriter) (Consolas))
 
 ((Times\ New\ Roman cjk) (SimSun))
-((SimSun italic) (SimKai))
+((Arial cjk) (Noto\ CJK\ SC))
+((KaiTi_GB2312 ascii) (Times\ Newer\ Roman))
+((KaiTi_GB2312 latin) (Times\ Newer\ Roman))

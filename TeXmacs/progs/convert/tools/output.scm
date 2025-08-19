@@ -26,7 +26,7 @@
 (define output-break-flag #t)
 (define output-tail "")
 (define output-exact #f)
-(define output-line-length 79)
+(define output-line-length 1000)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; The output machinery
