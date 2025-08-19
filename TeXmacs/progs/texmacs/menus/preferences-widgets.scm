@@ -80,7 +80,7 @@
             (get-pretty-preference "look and feel")
             "18em"))
     (item (text "User interface language:")
-      (enum (set-preference "language" (language-name-to-language answer))
+      (enum (set-language-and-notify (language-name-to-language answer))
             (map language-to-language-name supported-languages)
             (language-to-language-name (get-preference "language"))
             "18em"))
@@ -608,6 +608,17 @@
             (get-pretty-preference "texmacs->image:format")
             "8em"))))
 
+;; Mogan Scheme ----------
+
+(tm-widget (mogan-scheme-preferences-widget)
+  ======
+  (bold (text "TeXmacs -> Mogan Scheme"))
+  ===
+  (aligned
+    (meti (hlist // (text "Use the Formatted Mogan Scheme"))
+      (toggle (set-boolean-preference "texmacs->mgs:formatted" answer)
+              (get-boolean-preference "texmacs->mgs:formatted")))))
+
 ;; All converters ----------
 
 (tm-widget (conversion-preferences-widget)
@@ -632,7 +643,10 @@
             (dynamic (pdf-preferences-widget)))))
       (tab (text "Image")
         (centered
-          (dynamic (image-preferences-widget))))))
+          (dynamic (image-preferences-widget))))
+      (tab (text "Mogan Scheme")
+        (centered
+          (dynamic (mogan-scheme-preferences-widget))))))
   ===)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
